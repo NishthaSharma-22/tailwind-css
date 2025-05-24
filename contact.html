@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>the cake nest || contact</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="min-h-screen flex items-center justify-center">
+    <div
+      class="absolute inset-0 -z-10 h-full w-full bg-white bg-[linear-gradient(to_right,#f0f0f0_1px,transparent_1px),linear-gradient(to_bottom,#f0f0f0_1px,transparent_1px)] bg-[size:6rem_4rem]"
+    ></div>
+
+    <!-- navbarrrrrr -->
+
+    <div
+      class="text-center w-full space-y-6 p-10 bg-pink-100 bg-opacity-40 rounded-3xl shadow-1xl border-4 border-dotted max-w-5xl mx-auto"
+    >
+    <div class="fixed -right-12 -top-14 z-50 transform scale-50 origin-top-right">
+      <img src="assets/images/pngegg.png" alt="">
+      <p class="absolute top-[450px] left-[195px] font-extrabold text-7xl text-pink-800 bg-gradient-to-r from-rose-300 via-amber-200 to-rose-300 inline-block text-transparent bg-clip-text shadow-md">
+        <a href="index.html">the cake nest</a>
+        </div>
+
+      <nav
+        class="bg-pink-100 text-4xl shadow-md flex flex-row justify-between items-center rounded-xl p-4 mb-20"
+      >
+        <ul class="flex space-x-8 text-xl">
+          <li>
+            <a href="index.html" class="text-rose-700 hover:text-yellow-600 hover:underline decoration-wavy"
+              >home</a
+            >
+          </li>
+          <li>
+            <a href="contact.html" class="text-rose-700 hover:text-yellow-700 hover:underline decoration-wavy"
+              >contact</a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <h1
+        class="text-5xl font-extrabold text-pink-800 animate-bounce bg-gradient-to-r from-rose-300 via-amber-200 to-rose-300 inline-block text-transparent bg-clip-text"
+      >
+        the cake nest
+      </h1>
+
+      <p
+        class="text-pink-700 text-xl underline decoration-dotted decoration-black"
+      >
+        welcome to the land of creamy wonders
+      </p>
+
+      <div class="flex justify-center items-center">
+        <img
+          src="assets/images/cake-1-landing-pixel.png"
+          alt="pixel art cake"
+          class="h-28"
+        />
+      </div>
+
+      <!-- cake order form! -->
+<div class="min-h-screen max-w-5xl flex items-center justify-center p-6">
+      <form
+        action="#"
+        class="w-full max-w-5xl bg-pink-300 rounded-2xl shadow-lg p-8 space-y-6 mt-10"
+      >
+      <form class="w-full max-w-xl bg-white rounded-2xl shadow-lg p-8 space-y-6" action="#" method="POST">
+        <h2 class="text-3xl font-bold text-center text-pink-600">cake order form</h2>
+    
+        <div>
+          <label for="name" class="block font-semibold mb-1">full name</label>
+          <input type="text" id="name" name="customer_name" class="w-full p-3 border border-gray-300 rounded-lg" required>
+        </div>
+    
+        <div>
+          <label for="phone" class="block font-semibold mb-1">phone number</label>
+          <input type="tel" id="phone" name="phone" class="w-full p-3 border border-gray-300 rounded-lg" required>
+        </div>
+    
+        <div>
+          <label for="flavor" class="block font-semibold mb-1">cake flavor</label>
+          <select id="flavor" name="flavor" class="w-full p-3 border border-gray-300 rounded-lg" required>
+            <option value="">-- select flavor --</option>
+            <option value="vanilla">vanilla</option>
+            <option value="chocolate">chocolate</option>
+            <option value="red_velvet">red velvet</option>
+            <option value="lemon">lemon</option>
+            <option value="strawberry">strawberry</option>
+            <option value="custom">custom (specify below)</option>
+          </select>
+        </div>
+    
+        <div>
+          <label for="customFlavor" class="block font-semibold mb-1">custom flavor (if any)</label>
+          <input type="text" id="customFlavor" name="custom_flavor" class="w-full p-3 border border-gray-300 rounded-lg">
+        </div>
+    
+        <div>
+          <label for="size" class="block font-semibold mb-1">cake size</label>
+          <select id="size" name="size" class="w-full p-3 border border-gray-300 rounded-lg" required>
+            <option value="">-- select size --</option>
+            <option value="6inch">6-inch (serves 6-8)</option>
+            <option value="8inch">8-inch (serves 10-12)</option>
+            <option value="10inch">10-inch (serves 14-16)</option>
+            <option value="tiered">custom (specify below)</option>
+          </select>
+        </div>
+    
+        <div>
+          <label for="customSize" class="block font-semibold mb-1">custom size</label>
+          <textarea id="customSize" name="custom_size" rows="2" class="w-full p-3 border border-gray-300 rounded-lg"></textarea>
+        </div>
+    
+        <div>
+          <label for="message" class="block font-semibold mb-1">message on cake</label>
+          <input type="text" id="message" name="cake_message" maxlength="50" class="w-full p-3 border border-gray-300 rounded-lg">
+        </div>
+    
+        <div>
+          <label for="deliveryDate" class="block font-semibold mb-1">preferred delivery date</label>
+          <input type="date" id="deliveryDate" name="delivery_date" class="w-full p-3 border border-gray-300 rounded-lg" required>
+        </div>
+    
+        <div>
+          <label for="address" class="block font-semibold mb-1">delivery address</label>
+          <textarea id="address" name="delivery_address" rows="3" class="w-full p-3 border border-gray-300 rounded-lg" required></textarea>
+        </div>
+    
+        <div>
+          <label for="notes" class="block font-semibold mb-1">additional info/instructions</label>
+          <textarea id="notes" name="additional_notes" rows="3" class="w-full p-3 border border-gray-300 rounded-lg"></textarea>
+        </div>
+    
+        <button type="submit" class="w-full bg-pink-600 text-white py-3 rounded-lg font-semibold hover:bg-orange-700 transition">
+          submit
+        </button>
+      </form>
+    </div>
+    
+      <footer
+        class="mt-16 bg-white rounded-t-xl p-10 shadow-inner relative overflow-hidden"
+      >
+        <div class="grid grid-cols-1 gap-6 text-center">
+          <div class="flex justify-center">
+            <img
+              src="assets/images/cake-1-landing-pixel.png"
+              alt="Cake Logo"
+              class="h-20 w-auto object-contain"
+            />
+          </div>
+
+          <div>
+            <h4 class="font-bold text-xl mb-2">explore</h4>
+            <ul class="space-y-1 text-pink-500">
+              <li>
+                <a href="#" class="hover:underline decoration-wavy"
+                  >signature cakes</a
+                >
+              </li>
+              <li>
+                <a href="" class="hover:underline decoration-wavy">tarts</a>
+              </li>
+              <li>
+                <a href="" class="hover:underline decoration-wavy"
+                  >cupcake collection</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="font-bold text-xl mb-2">contact the chef</h4>
+            <p class="text-pink-500">
+              <a
+                href="mailto:chef@thecakenest.com"
+                class="hover:underline decoration-wavy"
+                >chef@thecakenest.com</a
+              >
+            </p>
+            <p class="text-pink-700 italic mt-10">
+              made with html, tailwindcss and lots of love &lt;3
+            </p>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
